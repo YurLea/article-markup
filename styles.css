@@ -1,8 +1,46 @@
 /* Тут пиши основные стили */
 
 
+p {
+    position: relative;
+    left: 50px;
+    top: -1px;
+    width: 700px;
+    height: 326px;
+    font-family: Georgia;
+    font-size: 21px;
+    color: rgba(0, 0, 0, 0.84);
+    text-align: left;
+    line-height: 33px;
+}
+
+/* Style for all h1 headings */
+h1 {
+    font-family: Georgia;
+    font-size: 42px;
+    color: rgba(0, 0, 0, 0.84);
+    text-align: left;
+    margin-left: 50px;
+}
+
+/* Alternative: If you want to target only the second and third h1 specifically */
+h1:nth-of-type(2),
+h1:nth-of-type(3) {
+    font-size: 34px;
+}
+
 @media (max-width: 800px) {
-/* Тут пиши стили для мобилки.
-    Стили применятся только когда страничка будет ≤800px шириной
- */
+    /* Тут пиши стили для мобилки.
+        Стили применятся только когда страничка будет ≤800px шириной
+     */
+    h1 {
+        font-size: 28px;
+        margin-left: 20px;
+    }
+
+    p {
+        left: 20px;
+        width: calc(100% - 40px);
+        height: auto;
+    }
 }
