@@ -13,16 +13,14 @@ p {
     line-height: 33px;
 }
 
-/* Style for all h1 headings */
 h1 {
-    font-family: Georgia;
+    font-family: LucidaGrande-Bold;
     font-size: 42px;
     color: rgba(0, 0, 0, 0.84);
     text-align: left;
     margin-left: 50px;
 }
 
-/* Alternative: If you want to target only the second and third h1 specifically */
 h1:nth-of-type(2),
 h1:nth-of-type(3) {
     font-size: 34px;
